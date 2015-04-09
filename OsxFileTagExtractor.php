@@ -1,7 +1,7 @@
 <?php
 /**
  * @author David Spreekmeester
- * @year 2015
+ * @license http://opensource.org/licenses/BSD-3-Clause
  *
  */
 class OsxFileTagExtractor {

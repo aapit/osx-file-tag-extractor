@@ -1,4 +1,9 @@
 <?php
+/**
+ * @author David Spreekmeester
+ * @license http://opensource.org/licenses/BSD-3-Clause
+ *
+ */
 require_once('OsxFileTagExtractor.php');
 
 if (!array_key_exists(1, $argv)) {
