@@ -5,6 +5,7 @@
  *
  */
 require_once 'lib/OsxFileTagExtractor.php';
+require_once 'lib/TagIntegrator.php';
 
 if (!array_key_exists(1, $argv)) {
 	echo "Please provide the path to process as the first argument";
@@ -13,9 +14,8 @@ if (!array_key_exists(1, $argv)) {
 
 $path = $argv[1];
 
-$list = new OsxFileTagExtractor();
-$list->listFilesWithTags($path);
+$extractor = new OsxFileTagExtractor();
+$list = $extractor->listFilesWithTags($path);
+$integrator = new TagIntegrator($path);
+$integrator->integrateTags($list);
 
-foreach ($list as $taggedNode) {
-	print_r($taggedNode);
-}
