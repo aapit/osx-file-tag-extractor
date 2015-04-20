@@ -15,3 +15,7 @@ $path = $argv[1];
 
 $list = new OsxFileTagExtractor();
 $list->listFilesWithTags($path);
+
+foreach ($list as $taggedNode) {
+	print_r($taggedNode);
+}
