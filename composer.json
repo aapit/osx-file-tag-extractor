@@ -1,0 +1,14 @@
+{
+    "name": "aapit/osx-file-tag-extractor",
+    "description": "Extracts metatags OSX stores for files / dirs since Mountain Lion",
+    "require": {
+        "phpunit/phpunit": "~4.6"
+    },
+    "license": "BSD-3",
+    "authors": [
+        {
+            "name": "David Spreekmeester",
+            "email": "david@grrr.nl"
+        }
+    ]
+}
