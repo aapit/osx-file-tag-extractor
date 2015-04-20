@@ -8,7 +8,7 @@ class TaggedFileList extends ArrayObject {
 	
 	public function addNode(array $node = null) {
 		if ($node) {
-			$this[] = $node;
+			$this[key($node)] = current($node);
 		}
 	}
 
